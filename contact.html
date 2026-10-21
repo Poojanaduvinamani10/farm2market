@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Farm2Market - Contact Us</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(153, 200, 153);
+            color: rgb(21, 26, 23);
+            margin: 0px;
+            
+        }
+        header {
+            background-color: rgb(51, 129, 51);
+            padding: 15px 25px;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+           
+        }
+        .logo {
+            color: rgb(82, 239, 132);
+            font-size: 27px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            
+           }
+
+        nav a {
+            color: rgb(11, 48, 11);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 8px 5px;
+
+        }
+
+        
+        nav a:hover {
+            color: white;
+            text-decoration: underline;
+        }  
+       
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        
+        .heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .heading h2 {
+            color: rgb(11, 48, 11);
+            font-size: 32px;
+        }
+
+        .heading p {
+            font-size: 17px;
+        }
+
+        
+        .contact-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        
+        .contact-info {
+            flex: 1;
+            min-width: 280px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-info h3 {
+            color: rgb(51, 129, 51);
+            font-size: 23px;
+        }
+
+        .contact-info p {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+      
+        .contact-form {
+            flex: 1;
+            min-width: 200px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-form h3 {
+            color: rgb(51, 129, 51);
+            font-size: 23px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .contact-form button {
+            background-color: rgb(51, 129, 51);
+            color: white;
+            border:2px solid black;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: rgb(11, 48, 11);
+        }
+
+        
+        footer {
+            background-color: rgb(11, 48, 11);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 35px;
+        }
+
+        footer p {
+            margin: 8px;
+        }
+
+        
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 12px;
+            }
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="logo">🌾 Farm2Market</h1>
+
+        <nav>
+            <a href="homeee.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="heading">
+            <h2>Contact Us</h2>
+            <i><strong>Fresh from Farm, Direct to You</strong></i>
+            <p>Have a question? We would love to hear from you!</p>
+        </div>
+
+        <div class="contact-section">
+
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+
+                <p>🌾 <strong>Farm2Market</strong></p>
+
+                <p>
+                    📍 <strong>Address:</strong><br>
+                    Bengaluru, Karnataka, India
+                </p>
+
+                <p>
+                    📧 <strong>Email:</strong><br>
+                    poojanaduvinaman9i239@gmail.com
+                </p>
+
+                <p>
+                    📞 <strong>Phone:</strong><br>
+                    +91 96863421934
+                </p>
+
+                <p>
+                    🤝 We help farmers connect directly with
+                    customers, shops, and restaurants.
+                </p>
+            </div>
+
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                    <label for="role">I am a</label>
+                    <select id="role" name="role" required>
+                        <option value="">Select your role</option>
+                        <option value="farmer">Farmer</option>
+                        <option value="customer">Customer</option>
+                        <option value="shopkeeper">Shopkeeper</option>
+                        <option value="restaurant">Restaurant Owner</option>
+                    </select><br><br>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter the subject" required><br><br>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea><br><br>
+
+                    <button type="submit">Send Message</button>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2026 Farm2Market. All Rights Reserved.</p>
+        <p>Supporting Farmers, Delivering Freshness 🌿</p>
+    </footer>
+
+</body>
+</html>
+

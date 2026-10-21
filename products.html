@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm2Market</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(153, 200, 153);
+            color: rgb(21, 26, 23);
+            margin:0px;
+        }
+
+        nav {
+            background-color: rgb(51, 129, 51);
+            padding: 20px;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            color: rgb(82, 239, 132);
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .head {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: rgb(220, 242, 220);
+        }
+
+        .head h1 {
+            color: darkgreen;
+            font-size: 40px;
+        }
+
+        .head p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: green;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 10px;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background-color: darkgreen;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .categories a {
+            background-color: white;
+            color: darkgreen;
+            text-decoration: none;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .categories a:hover {
+            background-color: lightgreen;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product {
+            background-color: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgb(100, 130, 100);
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product h2 {
+            color: darkgreen;
+        }
+
+        footer {
+            background-color: rgb(11, 48, 11);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">🌾 Farm2Market</div>
+
+        <div>
+            <a href="homeee.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="head">
+        <h1>🌾 Farm2Market</h1>
+        <i>Fresh from Farm, Direct to You</i>
+
+        <p>
+            Connecting Farmers Directly with Restaurants, Shops and Consumers
+        </p>
+
+        <a href="products.html" class="btn">Explore Products</a>
+        <a href="contact.html" class="btn">Contact Us</a>
+    </div>
+
+    <div class="heading">
+        <h1>Our Agricultural Products</h1>
+
+        <p>
+            Discover fresh farm products directly from farmers. Connecting Farmers, Restaurants, Shops and Consumers.
+        </p>
+    </div>
+
+    
+
+    <div class="container">
+
+        <div class="product">
+            <h2>🥦Vegetable</h2>
+            <a href="vegetables.html">
+                <img src="vegetables.jpg" alt="Fresh Vegetables">
+            </a>
+            <p>Fresh vegetables directly from farmers.</p>
+        </div>
+
+        <div class="product">
+            <h2>🍎 Fruits</h2><br>
+            <a href="fruits.html">
+                <img src="fruits.jpg" alt="Fresh Fruits">
+            </a>
+            <p>Fresh and juicy seasonal fruits.</p>
+        </div>
+
+        <div class="product">
+            <h2>🌾Grains</h2>
+            <a href="grains.html">
+                <img src="grains.jpg" alt="Fresh Grains">
+            </a>
+            <p>Quality grains from local farmers.</p>
+        </div>
+
+        <div class="product">
+            <h2>🥛Dairy Products</h2>
+            <a href="dairy products.html">
+                <img src="dairy product.jpg" alt="Dairy Products">
+            </a>
+            <p>Fresh milk and other dairy products.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Farm2Market. All Rights Reserved.</p>
+        <p>Supporting Farmers, Delivering Freshness 🌿</p>
+    </footer>
+
+</body>
+</html>

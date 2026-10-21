@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fruit Menu</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(153, 200, 153);
+            color: rgb(21, 26, 23);
+        }
+        nav {
+            background-color: rgb(51, 129, 51);
+            padding: 20px ;
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .a1{
+            display: flex;
+            justify-content:right;
+            align-items: center;
+            gap:15px;
+            background-color: rgb(133, 234, 198);
+            color: aliceblue;
+            
+        }
+        h2{
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .fruit {
+            background-color: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgb(218, 193, 193);
+        }
+
+        .fruit img {
+            width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .fruit h3 {
+            margin-bottom: 8px;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .add-btn {
+            background-color: rgb(8, 227, 140);
+            color: green;
+            border: 1px solid green;
+            padding: 8px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    
+     <nav>
+        <div class="logo"><h1>🌾 Farm2Market</h1></div>
+
+        <div>
+            <a href="homeee.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="a1">
+        <a href="vegetables.html">Vegetables</a>
+        <a href="fruits.html">Fruits</a>
+        <a href="grains.html">Grains</a>
+        <a href="dairy products.html">Dairy Products</a>
+    </div>
+
+    <h2>Fresh Fruits</h2>
+
+    <div class="container">
+
+    <div class="fruit">
+        <img src="apple.jpg" alt="Apple">
+        <h3>Fresh Apple</h3>
+        <p class="price">₹120/kg</p>
+        <p><b>Farmer name:</b> Abhi</p>
+         <p><b>Farmer Location:</b> Ballari</p>
+        <p><b>Product Quantity:</b> 500kg</p>
+        
+        <button class="add-btn">BUY NOW</button>
+    </div>
+
+    <div class="fruit">
+        <img src="banana.jpg" alt="Banana">
+        <h3>Banana</h3>
+        <p class="price">₹60/KG</p>
+        <p><b>Farmer name:</b> Rajesh</p>
+         <p><b>Farmer Location:</b> Bihar</p>
+        <p><b>Product Quantity:</b> 200kg</p>
+        
+        <button class="add-btn">BUY NOW</button>
+    </div>
+
+    <div class="fruit">
+        <img src="papaya.jpg" alt="papaya">
+        <h3>Orange</h3>
+        <p class="price">₹80/kg</p>
+        
+        <p><b>Farmer name:</b> Bahubali</p>
+         <p><b>Farmer Location:</b> Bidar</p>
+        <p><b>Product Quantity:</b> 200kg</p>
+        <button class="add-btn">BUY NOW</button>
+    </div>
+
+    <div class="fruit">
+        <img src="grapes.jpg" alt="Grapes">
+        <h3>Grapes</h3>
+        <p class="price">₹100/kg</p>
+        <p><b>Farmer Name:</b>Kiran</p>
+        <p><b>Farmer Location:</b> Bijapur</p>
+        <p><b>Product Quantity:</b> 250kg</p>
+        <button class="add-btn">BUY NOW</button>
+    </div>
+    <div class="fruit">
+        <img src="guava.jpg" alt="guava">
+        <h3>Guava</h3>
+        <p class="price">₹100/kg</p>
+        <p><b>Farmer Name:</b>Sachin</p>
+        <p><b>Farmer Location:</b> Belagavi</p>
+        <p><b>Product Quantity:</b> 100kg</p>
+        <button class="add-btn">BUY NOW</button>
+    </div>
+    
+    <div class="fruit">
+        <img src="mango.jpg" alt="mango">
+        <h3>Mango</h3>
+        <p class="price">₹130/kg</p>
+        <p><b>Farmer Name:</b>Naveen</p>
+        <p><b>Farmer Location:</b> Bagalakot</p>
+        <p><b>Product Quantity:</b> 150kg</p>
+        <button class="add-btn">BUY NOW</button>
+    </div>
+    
+
+
+</div>
+
+</body>
+</html>

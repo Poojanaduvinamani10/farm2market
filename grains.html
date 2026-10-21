@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grains</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(153, 200, 153);
+            color: rgb(21, 26, 23);
+            margin: 0;
+        }
+
+        nav {
+            background-color: rgb(51, 129, 51);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: left;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .a1{
+            display: flex;
+            justify-content:right;
+            align-items: center;
+            gap:15px;
+            background-color: rgb(133, 234, 198);
+            color: aliceblue;
+            
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grain {
+            background-color: white;
+            padding: 15px;
+            border-radius: 12px;
+            
+        }
+
+        .grain img {
+            width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .grain h3 {
+            margin-bottom: 8px;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 18px;
+            color: green;
+        }
+
+        .add-btn {
+            background-color: rgb(8, 227, 140);
+            color: green;
+            border: 1px solid green;
+            padding: 8px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .add-btn:hover {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <h1>🌾Farm2Market</h1>
+        </div>
+
+        <div>
+            <a href="homeee.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="a1">
+        <a href="vegetables.html">Vegetables</a>
+        <a href="fruits.html">Fruits</a>
+        <a href="grains.html">Grains</a>
+        <a href="dairy products.html">Dairy Products</a>
+    </div>
+
+    <h2>Fresh Grains</h2>
+
+    <div class="container">
+
+        <div class="grain">
+            <img src="rice.jpg" alt="Rice" height="100px" width="100px">
+            <h3> Rice</h3>
+            <p class="price">₹50/kg</p>
+            <p><b>Farmer Name:</b> Abhi</p>
+            <p><b>Farmer Location:</b> Ballari</p>
+            <p><b>Product Quantity:</b> 200 kg</p>
+            <button class="add-btn">BUY NOW</button>
+        </div>
+
+        <div class="grain">
+            <img src="wheat.jpg" alt="Wheat">
+            <h3>Wheat</h3>
+            <p class="price">&#8377;40/kg</p>
+            <p><b>Farmer Name:</b> Ram</p>
+            <p><b>Farmer Location:</b> Tumakuru</p>
+            <p><b>Product Quantity:</b> 250 kg</p>
+            <button class="add-btn">BUY NOW</button>
+        </div>
+
+        <div class="grain">
+            <img src="raagi.jpg" alt="Ragi">
+            <h3> Raagi</h3>
+            <p class="price">₹45/kg</p>
+            <p><b>Farmer Name:</b> Bharat</p>
+            <p><b>Farmer Location:</b> Hassan</p>
+            <p><b>Product Quantity:</b> 150 kg</p>
+            <button class="add-btn">BUY NOW</button>
+        </div>
+
+        <div class="grain">
+            <img src="corn.jpg" alt="Corn">
+            <h3>Corn</h3>
+            <p class="price">₹30/kg</p>
+            <p><b>Farmer Name:</b> Karan</p>
+            <p><b>Farmer Location:</b> Haveri</p>
+            <p><b>Product Quantity:</b> 180 kg</p>
+            <button class="add-btn">BUY NOW</button>
+        </div>
+
+        <div class="grain">
+            <img src="jola.jpg" alt="Jola">
+            <h3>Jola (Jowar)</h3>
+            <p class="price">₹35/kg</p>
+            <p><b>Farmer Name:</b> Naveen</p>
+            <p><b>Farmer Location:</b> Bagalkot</p>
+            <p><b>Product Quantity:</b> 200 kg</p>
+            <button class="add-btn">BUY NOW</button>
+        </div>
+        <div class="grain">
+            <img src="moong.jpg" alt="moong">
+            <h3> moong</h3>
+            <p class="price">₹85/kg</p>
+            <p><b>Farmer Name:</b> Naveen</p>
+            <p><b>Farmer Location:</b> Bagalkot</p>
+            <p><b>Product Quantity:</b> 200 kg</p>
+            <button class="add-btn">BUY NOW</button>
+    </div>
+
+</body>
+</html>

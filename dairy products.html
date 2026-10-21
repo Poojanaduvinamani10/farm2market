@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dairy Products</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(153, 200, 153);
+            color: rgb(21, 26, 23);
+            margin: 0;
+        }
+
+        nav {
+            background-color: rgb(51, 129, 51);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .a1{
+            display: flex;
+            justify-content:right;
+            align-items: center;
+            gap:15px;
+            background-color: rgb(133, 234, 198);
+            color: aliceblue;
+            
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .dairy {
+            background-color: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgb(218, 193, 193);
+        }
+
+        .dairy img {
+            width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .dairy h3 {
+            margin-bottom: 8px;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 18px;
+            color: green;
+        }
+
+        .add-btn {
+            background-color: rgb(8, 227, 140);
+            color: green;
+            border: 1px solid green;
+            padding: 8px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .add-btn:hover {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <h1>🌾 Farm2Market</h1>
+        </div>
+
+        <div>
+            <a href="homeee.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="a1">
+        <a href="vegetables.html">Vegetables</a>
+        <a href="fruits.html">Fruits</a>
+        <a href="grains.html">Grains</a>
+        <a href="dairy products.html">Dairy Products</a>
+    </div>
+
+    <h2>Fresh Dairy Products</h2>
+
+    <div class="container">
+
+        <div class="dairy">
+            <img src="milk.jpg" alt="Fresh Milk">
+            <h3>Fresh Milk</h3>
+            <p class="price">₹60/litre</p>
+            <p><b>Farmer Name:</b> Abhi</p>
+            <p><b>Farmer Location:</b> Ballari</p>
+            <p><b>Product Quantity:</b> 100 litres</p>
+            <button class="add-btn">BUY NOW</button>
+        </div>
+
+        <div class="dairy">
+            <img src="butter.jpg" alt="Fresh Butter">
+            <h3>Fresh Butter</h3>
+            <p class="price">₹100/250g</p>
+            <p><b>Farmer Name:</b> Ram</p>
+            <p><b>Farmer Location:</b> Tumakuru</p>
+            <p><b>Product Quantity:</b> 50 kg</p>
+            <button class="add-btn">BUY NOW</button>
+        </div>
+
+        <div class="dairy">
+            <img src="panneer.jpg" alt="Fresh Paneer">
+            <h3>Fresh Paneer</h3>
+            <p class="price">₹120/250g</p>
+            <p><b>Farmer Name:</b> Bharat</p>
+            <p><b>Farmer Location:</b> Hassan</p>
+            <p><b>Product Quantity:</b> 40 kg</p>
+            <button class="add-btn">BUY NOW</button>
+        </div>
+
+        <div class="dairy">
+            <img src="curd.jpg" alt="Fresh Curd">
+            <h3>Fresh Curd</h3>
+            <p class="price">₹40/500g</p>
+            <p><b>Farmer Name:</b> Karan</p>
+            <p><b>Farmer Location:</b> Haveri</p>
+            <p><b>Product Quantity:</b> 60 kg</p>
+            <button class="add-btn">BUY NOW</button>
+        </div>
+
+        <div class="dairy">
+            <img src="ghee.jpg" alt="Pure Ghee">
+            <h3>Pure Ghee</h3>
+            <p class="price">₹300/500g</p>
+            <p><b>Farmer Name:</b> Naveen</p>
+            <p><b>Farmer Location:</b> Bagalkot</p>
+            <p><b>Product Quantity:</b> 30 kg</p>
+            <button class="add-btn">BUY NOW</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
