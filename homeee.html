@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +12,9 @@
             background-color: rgb(153, 200, 153);
             color: rgb(21, 26, 23);
             line-height: 1.6;
+            margin: 0;
         }
 
-      
         nav {
             background-color: rgb(51, 129, 51);
             padding: 20px 5%;
@@ -28,6 +29,16 @@
             color: rgb(82, 239, 132);
             font-size: 27px;
             font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
         }
 
         nav a {
@@ -42,13 +53,12 @@
             color: rgb(255, 215, 100);
         }
 
-       
         .hero {
             min-height: 350px;
             background: linear-gradient(
                 rgba(30, 70, 30, 0.45),
                 rgba(20, 80, 30, 0.75)
-            );
+            ), url("farmer.jpg");
             background-size: cover;
             background-position: center;
             display: flex;
@@ -104,7 +114,15 @@
             margin-bottom: 20px;
         }
 
-       
+        .welcome-image {
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 0 20px 15px 0;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
         .products {
             display: flex;
             justify-content: center;
@@ -121,7 +139,8 @@
             padding: 25px 20px;
             border-radius: 12px;
             box-shadow: 0 3px 12px rgba(50, 80, 50, 0.2);
-            
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
         }
 
         .card:hover {
@@ -144,7 +163,6 @@
             line-height: 1.8;
         }
 
-        
         .how {
             background-color: rgb(193, 208, 193);
         }
@@ -163,7 +181,6 @@
             font-size: 20px;
         }
 
-        
         .connection {
             background-color: rgb(179, 233, 175);
         }
@@ -193,12 +210,10 @@
             color: rgb(31, 95, 31);
         }
 
-       
         .benefits {
             background-color: rgb(178, 215, 178);
         }
 
-       
         .cta {
             background-color: rgb(31, 95, 31);
             color: white;
@@ -208,7 +223,6 @@
             color: white;
         }
 
-        
         footer {
             background-color: rgb(11, 48, 11);
             color: white;
@@ -231,7 +245,6 @@
             color: rgb(82, 239, 132);
         }
 
-        
         @media screen and (max-width: 768px) {
             nav {
                 padding: 20px;
@@ -241,6 +254,7 @@
 
             nav .logo {
                 width: 100%;
+                justify-content: center;
             }
 
             nav div:last-child {
@@ -283,9 +297,14 @@
             .arrow {
                 font-size: 25px;
             }
+
+            .welcome-image {
+                float: none;
+                display: block;
+                margin: 0 auto 20px;
+            }
         }
 
-        
         @media screen and (max-width: 480px) {
             .hero {
                 padding: 25px 15px;
@@ -326,9 +345,11 @@
 
 <body>
 
-    
     <nav>
-        <div class="logo">🌾 Farm2Market</div>
+        <div class="logo">
+            <img src="logo.jpg" alt="Farm2Market Logo">
+            Farm2Market
+        </div>
 
         <div>
             <a href="homeee.html">Home</a>
@@ -338,10 +359,9 @@
         </div>
     </nav>
 
-    
     <div class="hero">
         <div>
-            <h1>🌾 Farm2Market</h1>
+            <h1>Farm2Market</h1>
             <h2>Fresh from Farm, Direct to You</h2>
 
             <p>
@@ -357,6 +377,8 @@
     <section>
         <h2>Welcome to Farm2Market</h2>
 
+        <img src="farmer.jpg" alt="Farmer" class="welcome-image">
+
         <p>
             Farm2Market is a digital platform that connects farmers
             directly with restaurants, shops and consumers.
@@ -367,7 +389,6 @@
         </p>
     </section>
 
-   
     <section>
         <h2>Our Featured Products</h2>
 
@@ -420,7 +441,6 @@
         <a href="products.html" class="btn">View All Products</a>
     </section>
 
-    
     <section class="how">
         <h2>How Farm2Market Works</h2>
 
@@ -468,7 +488,6 @@
         </div>
     </section>
 
-   
     <section class="connection">
         <h2>From Farmer to Buyer</h2>
 
@@ -508,7 +527,6 @@
         </p>
     </section>
 
-   
     <section class="benefits">
         <h2>Why Choose Farm2Market?</h2>
 
@@ -553,7 +571,6 @@
         </div>
     </section>
 
-    
     <section class="cta">
         <h2>Ready to Explore Farm Products?</h2>
 
@@ -566,9 +583,8 @@
         <a href="contact.html" class="btn">Contact Us</a>
     </section>
 
-   
     <footer>
-        <h3>🌾 Farm2Market</h3>
+        <h3>Farm2Market</h3>
 
         <i>Fresh from Farm, Direct to You</i>
 
